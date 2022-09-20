@@ -4,6 +4,8 @@
 h1{
     font-family: sans-serif;
     line-height: normal;
+    font-size: 65px;
+    color: orange;
 }
 
 body{
@@ -16,7 +18,11 @@ p{
 ul{
     font-style: italic;
     font-size: 20px;  
+    background-color: blue;
     
+}
+.first {
+    background-color: aqua;
 }
 li{
     text-align: justify;
