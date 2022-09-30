@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function adicionaTagH1() {
+        let pai = document.querySelector('body');
+        let filhoH1 = document.createElement('h1');
+        filhoH1.innerText = "Exercício - JavaScript DOM";
+        pai.appendChild(filhoH1);
+      }
+      adicionaTagH1();
+
+      function adicionaTagMain() {
+        let pai = document.querySelector('body');
+        let filhoMain = document.createElement('main');
+        filhoMain.className = 'main-content';
+        pai.appendChild(filhoMain);
+      }
+      adicionaTagMain();
+
+      function adicionaTagSection() {
+      let pai = document.querySelector('main');
+      let filhoSection = document.createElement('section');
+      filhoSection.className = 'main-content';
+      pai.appendChild(filhoSection);
+      }
+      adicionaTagSection();
+
+      function adicionaTagP() {
+        let pai = document.querySelector('section');
+        let filhoP = document.createElement('p');
+        filhoP.innerText = "Texto qualquer para aparecer no navegador";
+        pai.appendChild(filhoP);
+      }
+      adicionaTagP();
+
+      function adicionaTagSection2() {
+        let pai = document.querySelector('main');
+        let filhoSection2 = document.createElement('section');
+        filhoSection2.className = 'left-content';
+        pai.appendChild(filhoSection2);
+      }
+      adicionaTagSection2();
+
+      function adicionaTagSection3() {
+        let pai = document.querySelector('main');
+        let filhoSection3 = document.createElement('section');
+        filhoSection3.className = 'right-content';
+        pai.appendChild(filhoSection3);
+      }
+      adicionaTagSection3();
+
+      function adicionaImage() {
+        let pai = document.getElementsByClassName('left-content')[0];
+        let filhoImg = document.createElement('img');
+        filhoImg.className = 'small-image';
+        filhoImg.src = 'https://picsum.photos/200'
+        pai.appendChild(filhoImg);
+      }
+      adicionaImage();
+
+      function adicionaListaUl() {
+        let pai = document.getElementsByClassName('right-content')[0];
+        let filhoLista = document.createElement('ul');
+        pai.appendChild(filhoLista);        
+        let numbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez'];
+        for (index = 0; index < numbers.length; index += 1) {
+          let paiDosItens = document.querySelector('ul');
+          let itensDaLista = document.createElement('li');
+          itensDaLista.innerText = numbers[index];
+          paiDosItens.appendChild(itensDaLista)
+        }        
+      }
+      adicionaListaUl();
+
+      function adicionaTagH3() {
+        let pai = document.querySelector('main');
+        let filho1 = document.createElement('h3');
+        let filho2 = document.createElement('h3');
+        let filho3 = document.createElement('h3');
+        pai.appendChild(filho1);
+        pai.appendChild(filho2);
+        pai.appendChild(filho3);
+      }
+      adicionaTagH3();
+
+
+
+      
+
+
+      
+
+    </script>
+  </body>
+</html>
