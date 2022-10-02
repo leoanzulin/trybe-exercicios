@@ -38,8 +38,10 @@ function createDaysOfTheMonth() {
 createDaysOfTheMonth();
 
 function createtButton(string) {
-  let pai = getElementsByClass("buttons-container")[0];
+  let pai = document.querySelector('.buttons-container');
   let button = document.createElement("button");
-  
-
+  button.innerText = string
+  button.id = 'btn-holiday';
+  pai.appendChild(button);
 }
+createtButton('Feriados')
