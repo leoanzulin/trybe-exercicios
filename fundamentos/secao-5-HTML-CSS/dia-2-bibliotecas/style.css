@@ -1,0 +1,19 @@
+body {
+    margin: 20px;
+    width: 50%;
+}
+main {
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+    
+}
+footer {
+    margin-left: 25%;
+}
+h2 {
+    font-size: larger;
+}
+textarea {
+    resize: none;
+}

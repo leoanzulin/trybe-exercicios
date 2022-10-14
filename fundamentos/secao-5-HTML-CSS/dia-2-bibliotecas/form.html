@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrybeTrip</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Trybe Trip</h1>
+    </header>
+    <main>
+        <form action="" method="get" class="row g-3">
+            <section id="name">                
+                <label for="nome">Nome:</label class="form-label">
+                <input type="text" name="nome"  minlength="10" maxlength="40" class="form-control">
+            </section>
+            <br>
+            <section id="name">
+                <label for="email">Email:</label class="form-label">
+                <input type="email" name="email" id="" minlength="10" maxlength="50" class="form-control">
+            </section>
+            <br>
+            <section>
+                <h2>Destino Preferido:</h2>
+                <label for="">Cidade</label>
+                <input class="form-check-input" type="radio" name="opcao">
+                <label for="">Campo</label>
+                <input class="form-check-input" type="radio" name="opcao">
+                <label for="">Praia</label>
+                <input class="form-check-input" type="radio" name="opcao">
+                <label for="">Montanhas</label>
+                <input class="form-check-input" type="radio" name="opcao">
+            </section>
+            <section id="name">
+                <h2>Espaço para digitar a resposta:</h2>
+                <textarea class="form-control" name="texto" id="" cols="30" rows="10" maxlength="500"></textarea>
+            </section>
+            <br>
+            <section>
+                <h2 >Qual a melhor data para realizar sua viagem?</h2>
+                <label for="">Data</label>
+                <input type="date" name="data">
+            </section>
+            <br>
+            <section>
+                <h2>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</h2>                
+                <input type="checkbox" name="concordo1" id="" class="form-check-input">
+                <label for="">Sim</label>
+            </section>
+            <br>
+            <section>
+                <h2>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</h2>               
+                <input type="checkbox" name="concordo2" id="" required class="form-check-input">
+                <label for="">Sim</label>
+            </section>
+            <br>
+            <section>
+                <button type="submit" id="submit" class="btn btn-success">Enviar</button>
+                <button type="reset" class="btn btn-danger">Apagar</button>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <p>Formulário TrybeTrip</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
