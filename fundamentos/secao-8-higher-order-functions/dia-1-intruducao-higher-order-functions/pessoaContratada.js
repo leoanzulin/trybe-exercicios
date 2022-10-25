@@ -12,4 +12,5 @@ const newEmployees = (nameEmail) => {
     return {fullName, email: `${email}@betrybe.com`};
   }
 
+  
   console.log(newEmployees(nameEmail));
