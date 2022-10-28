@@ -10,8 +10,26 @@ const names = [
   
   function containsA() {
     
-    return names.reduce((acc, curr) => acc.concat(curr.toLowerCase()),[]).join('').split('a').length - 1;
+    return names.reduce((acc, curr) => acc.concat(curr.toLowerCase()),[])
+    .join('').split('a').length - 1;
 
   }
 
   console.log(containsA());
+
+//Gabarito
+
+/* function containsA() {
+    let totalOfLettersA = 0;
+    names.forEach((name) => {
+      const lettersFromName = name.split('');
+      totalOfLettersA += lettersFromName.reduce((lettersAInName, currentLetter) => {
+        if (currentLetter === 'a' || currentLetter === 'A') {
+          return lettersAInName + 1;
+        }
+        return lettersAInName;
+      }, 0);
+    });
+    return totalOfLettersA;
+  }
+  console.log(containsA()); */
